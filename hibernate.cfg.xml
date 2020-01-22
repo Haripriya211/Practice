@@ -5,7 +5,7 @@
 
           "http://hibernate.sourceforge.net/hibernate-configuration-5.3.dtd">    
 
-     
+    
 
 <hibernate-configuration>    
 
@@ -25,14 +25,12 @@
 
         <property name="connection.driver_class">oracle.jdbc.driver.OracleDriver</property>    
 
-      
+     <mapping class="One2M.Question"/> 
 
-    <mapping class="onetoOne.Employ"/>
-
-     <mapping class="onetoOne.Address"/>     
+      <mapping class="One2M.Answer"/>     
 
     </session-factory>    
 
     
 
-</hibernate-configuration>    
+</hibernate-configuration>
